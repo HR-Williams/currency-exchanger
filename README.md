@@ -21,6 +21,8 @@
 
 ## Setup/Installation Requirements
 
+Note that you are required to include instructions for setting up an API key in your README for this section's independent project.
+
 * _Open the terminal on your local machine_
 * _If [Node.js](https://nodejs.org/en/) and [Nope Package Manager (npm)](https://www.npmjs.com/) are not installed on your local device, follow the instructions [here](https://www.learnhowtoprogram.com/intermediate-javascript/getting-started-with-javascript/installing-node-js)_
 * _Clone this project with the following git command `$ git clone <https://github.com/HR-Williams/template-repo>`_
