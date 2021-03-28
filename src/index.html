@@ -1,8 +1,27 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Example Project</title>
+  <title>USD Currency Exchanger</title>
 </head>
 <body>
+  <div class="container">
+    <h1>Get USD currency exchanged to other currencies!</h1>
+    <label for="amount">Enter a number in USD $</label>
+    <input id="amount" type="text">
+    <div class="form-group">
+      <h3>Currency which to exchange USD to</h3>
+      <select class="form-control" id="currency">
+        <option selected="selected"></option>
+        <option value="AED">UAE Dirham</option>
+        <option value="AFN">Albanian Lek</option>
+        <option value="AMD">Armenian Dram</option>
+        <option value="AWG">Aruban Florin</option>
+        <option value="AZN">Azerbijani Manat</option>
+      </select>
+      <button class="btn-success" id="currencyAmount">Get Current Conversion</button>
+      <div class="showErrors"></div>
+      <div class="showRate"></div>
+    </div>
+  </div>
 </body>
 </html>
