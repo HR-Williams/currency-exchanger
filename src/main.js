@@ -13,7 +13,8 @@ function clearFields() {
 function getElements(response) {
   if (response.result === "success") {
     $('.showRate').text(`Your USD query is ${response.conversion_result} ${response.target_code}`);
-  } else if (response.result === "error") { $('.showResponseError').text("Unfortunatly the matrix (the universe? do we know?) can't show you the conversion rate right now. It is beyond your control, just like the market itself. Money is made up but unfortunately capitalism is real and we live in it. If possible try to throw aside the concept of scarcity. If those of us vibrating on the same wave, tune in to each other's frequency we could all live in abundance.")
+  } else if (response["error-type"] === "unsupported-code") {
+    $('.showResultError').text("Unfortunatly the matrix (the universe? do we know?) can't show you the conversion rate right now. It is beyond your control, just like the market itself. Money is made up but unfortunately capitalism is real and we live in it. If possible try to throw aside the concept of scarcity. If those of us vibrating on the same wave, tune in to each other's frequency we could all live in abundance.")
   } else {
     $('.showErrors').text(`There was an error: ${response.message}. Please enter a number.`);
   } 
