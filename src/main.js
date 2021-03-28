@@ -4,9 +4,11 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 
-function clearFields( {
-  $('#')
-})
+function clearFields() {
+  $('#currency').selected("selected");
+  $('.show-errors').text("")
+}
+
 function getElements(response) {
   if (response.result === "success") {
     $('.showRate').text(`${amount}USD is ${response.conversion_result} ${currency}`);
